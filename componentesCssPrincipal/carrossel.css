@@ -1,0 +1,87 @@
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0 !important;
+   
+    }
+    .slider-partes{
+    
+    width: 400%;
+    height: auto;
+    display: flex;
+    
+    
+    }
+    
+    .slider-partes input, i{
+        display: none;
+    }
+    .slide-caixa{
+    
+    width: 25%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    transition: 1s linear;
+    
+    }
+    
+    .slide-caixa img{
+        width: 100%;
+    }
+    /* bolinas */
+    
+    .navManual, .navautomatica{
+    
+        position: absolute;
+        width: 94%;
+        margin-top: 31%;
+        justify-content: center;
+        display: flex;
+        margin-left: 30px;
+    
+    
+    }
+    
+    .navManual .manuelaperta, .navautomatica div {
+    
+    border:  1px solid #fc9ffc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    
+    }
+    .navManual .manuelaperta:not(:last-child), .navautomatica div:not(:last-child) {
+    
+        margin-right: 10px;
+    }
+    
+    /* houver */
+    
+    .navManual .manuelaperta:hover {
+    
+        background-color: #fc9ffc;
+    }
+    
+    #radio1:checked ~ .navautomatica .auto-btn1{
+    
+        background-color: #fc9ffc;
+    }
+    #radio2:checked ~ .navautomatica .auto-btn2{
+    
+        background-color: #fc9ffc;
+    }
+    
+    
+    #radio1:checked ~ .primeira{
+    
+        margin-left: 0%;
+    }
+    
+    #radio2:checked ~ .primeira{
+    
+        margin-left: -25%;
+    }
