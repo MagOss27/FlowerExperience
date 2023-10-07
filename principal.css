@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+   
+  }
+  
+  .navbar {
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EEF5F6;
+    padding: 35px;
+  
+    
+  }
+  
+  .navbar-logo {
+    
+    margin-left: 10px; 
+    height: -1px;
+  
+  }
+  
+  .navbar-logo img {
+    width: 110px;
+    height: 110px;
+    margin-right: 0%;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 325px;
+  }
+  label{
+   
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    
+    font-size: 25px;
+  }
+  .navbar-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    
+    font-size: 25px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .navbar-icons img {
+    
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  
+  #linha-vertical {
+    height: 25px;
+    border-right: 1px solid black;
+  }
+  
+  #containerPrincipal {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #EEF5F6;
+  justify-content: center;
+  
+  }
+  .carrosselPrincipal{
+  width: 95%;
+  height: 35vh;
+  margin-top: 50px;
+  }
+  
+  #cima {
+  
+  height: 15%;
+  width: 100%;
+  background-color: #EEF5F6; 
+  
+  }
+  
+  #meio {
+  
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  background-color: #EEF5F6;   
+    
+  }
+  
+  #labelboasvindas {
+  
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEF5F6;
+  margin: 5%;
+  
+  
+  }
+  
+  #carrossel {
+  
+  height: 100%;
+  width: 60%;
+  background-color: cadetblue;
+  
+  }
+  
+  #labelstyle {
+  
+  font-size: 200%;
+  
+  
+  }
+    
+  .carrosselFooter{
+  
+  width: 100%;
+    height: 78vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .CarrosselFooterMeio{
+  
+  width: 80%;
+    height: 30vh;
+    background-color: aquamarine;
+    margin-top: 120px;
+  }

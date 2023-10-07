@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="stylesheet" href="componentesCssPrincipal/dropdwon.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Flower Experience</title>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="elementos/ICONES/LOGO S.A.png" alt="Logo">
+    </div>
+    <nav class="navbar-menu">
+      <a href="principal.html">Início</a>
+      <div id="linha-vertical"></div>
+      <a href="#buques">Buquês</a>
+      <div id="linha-vertical"></div>
+      <a href="#plantadas">Plantadas</a>
+      <div id="linha-vertical"></div>
+      <a href="#orquidias">Orquídeas</a>
+    </nav>
+    <div class="navbar-icons">
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/3.png" alt="Icon 2">
+      </a>
+      <div class="dropdown">
+        <a href="#">
+          <img src="elementos/ICONES/2.png" alt="Icon 1">
+        </a>
+        <div class="dropdown-content">
+          <a href="perfil.html">Ver Pefil</a>
+          <a href="login.html" id="link-login">Sair</a>
+        </div>
+      </div>
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/1.png" alt="Icon 2">
+      </a>
+
+    </div>
+  </div>
+
+  <div id="container">
+
+    <div id="esquerda">
+
+      <div class="labeleditprodutos" id="produtos">
+
+      </div>
+
+    </div>
+
+    <div id="direita">
+
+      <div id="pagamento">
+
+        <div id="infospagamento">
+
+          <div id="cima">
+
+
+          </div>
+
+          <div id="meio">
+
+            <div class="labelpagamento">Valor total:</div>
+
+          </div>
+
+          <div id="baixo">
+
+
+          </div>
+
+        </div>
+
+        <div id="botoespagamento">
+
+          <button id="botao_um" onclick="finalizarCompra()">FINALIZAR</button>  
+          <button id="botao_dois"  onclick="ContinuarComrprando()">CONTINUAR COMPRANDO</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="carrinhoFuncional.js"></script>
+
+
+</body>
+
+</html>

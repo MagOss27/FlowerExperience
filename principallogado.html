@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="componentesCssPrincipal/cards.css">
+  <link rel="stylesheet" href="componentesCssPrincipal/carrossel.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="componentesCssPrincipal/carrosselFooter.css">
+  <link rel="stylesheet" href="componentesCssPrincipal/dropdwon.css">
+  <script src="componetesJsPrincipal/CarrosselFooter.js"></script>
+  <script src="componetesJsPrincipal/slide.js"></script>
+  <script src="componetesJsPrincipal/scrollTelaPrincipal.js"></script>
+  <script src="login.js"></script>
+
+  <title>Flower Experience</title>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="elementos/ICONES/LOGO S.A.png" alt="Logo">
+    </div>
+    <nav class="navbar-menu">
+      <label onclick="paginiaInicio()">Início</label>
+      <div id="linha-vertical"></div>
+      <a href="#buques">Buquês</a>
+      <div id="linha-vertical"></div>
+      <a href="#plantadas">Plantadas</a>
+      <div id="linha-vertical"></div>
+      <a href="#orquidias">Orquídeas</a>
+    </nav>
+    <div class="navbar-icons">
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/3.png" alt="Icon 2">
+      </a>
+      <div class="dropdown">
+        <a href="#">
+          <img src="elementos/ICONES/2.png" alt="Icon 1">
+        </a>
+        <div class="dropdown-content">
+          <a href="perfil.html">Ver Pefil</a>
+          <a href="login.html" id="link-login">Sair</a>
+        </div>
+      </div>
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/1.png" alt="Icon 2">
+      </a>
+
+    </div>
+  </div>
+
+  <div id="containerPrincipal">
+    <div class="carrosselPrincipal">
+
+
+      <section class="slider">
+        <div class="slider-partes">
+
+          <input type="radio" name="btn-radio" id="radio1">
+          <input type="radio" name="btn-radio" id="radio2">
+
+          <div class="slide-caixa primeira">
+            <img class="imagempc" src="elementos/ICONES/tex1.png" alt="slide1">
+
+          </div>
+
+          <div class="slide-caixa ">
+            <img class="imagempc" src="elementos/ICONES/tex2.png" alt="slide2">
+
+          </div>
+
+          <div class="navautomatica">
+
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+          </div>
+
+          <div class="navManual">
+            <label for="radio1" class="manuelaperta"></label>
+            <label for="radio2" class="manuelaperta"></label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="buques" class="containerCard">
+    <!-- cards 1 -->
+    <div class="card">
+      <span class="category">Categoria: Buquês</span>
+      <img src="elementos/PRODUTOS/1.png" alt="Produto 1">
+      <div class="card-content">
+        <h3 class="card-title">Buquê de Rosas</h3>
+        <span class="card-price">R$ 99,99</span>
+        <button onclick="produtoUmCardUm()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+
+
+
+
+      <img src="elementos/PRODUTOS/3.png" alt="Produto 2">
+      <div class="card-content">
+        <h3 class="card-title">Buquê Rústico</h3>
+        <span class="card-price">R$ 49,99</span>
+        <button onclick="produtoDoisCardUm()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+
+
+    <div class="card"><!-- <span class="category">Categoria:Decoração</span> -->
+      <img src="elementos/PRODUTOS/5.png" alt="Produto 3">
+      <div class="card-content">
+        <h3 class="card-title">Buquê de Girassóis e Rosas</h3>
+        <span class="card-price">R$ 149,99</span>
+        <button onclick="produtoTresCardUm()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <!-- cards 2 -->
+  <div id="plantadas" class="containerCard">
+    <div class="card">
+      <span class="categoryDois">Categoria: Flores Plantadas</span>
+      <img src="elementos/PRODUTOS/7.png" alt="Produto 1">
+      <div class="card-content">
+        <h3 class="card-title">Kalandiva, Chocolates e Natura na Box</h3>
+        <span class="card-price">R$ 99,99</span>
+        <button onclick="produtoUmCardDois()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <!-- <span class="category">Categoria: flores</span> -->
+      <img src="elementos/PRODUTOS/9.png" alt="Produto 2">
+      <div class="card-content">
+        <h3 class="card-title">Kalandiva, Chocolates e Urso na Box</h3>
+        <span class="card-price">R$ 49,99</span>
+        <button onclick="produtoDoisCardDois()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <!-- <span class="category">Categoria:Decoração</span> -->
+      <img src="elementos/PRODUTOS/11.png" alt="Produto 3">
+      <div class="card-content">
+        <h3 class="card-title">Box com Lírios</h3>
+        <span class="card-price">R$ 149,99</span>
+        <button onclick="produtoTresCardDois()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <!-- cards 3 -->
+  <div id="orquidias" class="containerCard">
+    <div class="card">
+      <span class="categoryTres">Categoria: Orquídeas</span>
+      <img src="elementos/PRODUTOS/13.png" alt="Produto 1">
+      <div class="card-content">
+        <h3 class="card-title">Orquídea na Box</h3>
+        <span class="card-price">R$ 99,99</span>
+        <button onclick="produtoUmCardTres()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+
+
+      <img src="elementos/PRODUTOS/15.png" alt="Produto 2">
+      <div class="card-content">
+        <h3 class="card-title">Orquídea no Vaso Pérola</h3>
+        <span class="card-price">R$ 49,99</span>
+        <button onclick="produtoDoisCardTres()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+
+
+      <img src="elementos/PRODUTOS/17.png" alt="Produto 3">
+      <div class="card-content">
+        <h3 class="card-title">Orquídea no Vaso Faces</h3>
+        <span class="card-price">R$ 149,99</span>
+        <button onclick="produtoTresCardTres()" class="buy-button">Comprar</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="containerFooter">
+    <!-- <div class="carrosselFooter">
+      <div class="CarrosselFooterMeio">
+
+
+
+
+
+
+      </div>
+    </div> -->
+
+
+    <footer>
+      <div>
+        <div class="icones">
+          <a id="icone" href="#"><img src="elementos/ICONES/instagram.png" alt="Instagram"></a>
+          <a id="icone" href="#"><img src="elementos/ICONES/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="elementos/ICONES/twitter.png" alt="Twitter"></a>
+        </div>
+        <p id="pDois">Quem Somos • Fale Conosco • Termos de Uso</p>
+        <p id="pUm">© 2023 Direitos Reservados</p>
+      </div>
+    </footer>
+  </div>
+
+<script src="principallogado.js"></script>
+
+</body>
+
+
+<script>
+
+
+  // Card 1
+
+
+  function produtoUmCardUm() {
+    // Redireciona para a outra página
+    window.location.href = "produto-um.html";
+  }
+  function produtoDoisCardUm() {
+    // Redireciona para a outra página
+    window.location.href = "produto-dois.html";
+  }
+  function produtoTresCardUm() {
+    // Redireciona para a outra página
+    window.location.href = "produto-tres.html";
+  }
+
+
+  // Card 2
+
+
+  function produtoUmCardDois() {
+    // Redireciona para a outra página
+    window.location.href = "produto-quatro.html";
+  }
+  function produtoDoisCardDois() {
+    // Redireciona para a outra página
+    window.location.href = "produto-cinco.html";
+  }
+  function produtoTresCardDois() {
+    // Redireciona para a outra página
+    window.location.href = "produto-seis.html";
+  }
+
+
+  // Card 2
+
+
+  function produtoUmCardTres() {
+    // Redireciona para a outra página
+    window.location.href = "produto-sete.html";
+  }
+  function produtoDoisCardTres() {
+    // Redireciona para a outra página
+    window.location.href = "produto-oito.html";
+  }
+  function produtoTresCardTres() {
+    // Redireciona para a outra página
+    window.location.href = "produto-nove.html";
+  }
+
+
+
+</script>
+
+
+
+
+</html>

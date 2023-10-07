@@ -1,0 +1,255 @@
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+    height: 100%;
+    margin: 0;
+
+}
+
+.container {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(249, 194, 247);
+    display: flex;
+    align-items: center;
+
+}
+
+.esquerda {
+
+    height: 100%;
+    width: 50%;
+    background-color: rgb(249, 194, 247);
+
+}
+
+.direita {
+
+    height: 100%;
+    width: 50%;
+    background-color: rgb(249, 194, 247);
+    background-image: url(elementos/ICONES/wallpapperSA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.card {
+
+    height: 60%;
+    width: 26%;
+    border-radius: 40px;
+    background-color: rgb(238, 245, 243);
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    display: flex;
+    flex-direction: column;
+
+    border: 5px solid rgb(249, 194, 247);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(10px);
+    
+}
+
+
+
+.label-titulo {
+
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.labels {
+
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+.label-float input {
+
+    height: 100%;
+    width: 100%;
+    padding: 1px 5px;
+    /*ficar largo*/
+    display: inline-block;
+    /*fixar em uma linha*/
+    border: 0;
+    /*borda na linha*/
+    border-bottom: 2px solid #000000;
+    /*cor da borda embaixo da linha*/
+    background-color: transparent;
+    /*sem a coluna de escrita*/
+    outline: none;
+    /*quando digita não aparece aquela coluna*/
+
+
+    /*este bloco de código serve para que os inputs, aumentem de tamanho*/
+    font-size: 22px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+    /*este bloco de código serve para que os inputs, aumentem de tamanho*/
+
+}
+
+.label-float {
+
+    position: relative;
+    padding-top: 20px;
+    /*desgrudar palavras da tela*/
+    margin-bottom: 5%;
+    width: 80%;
+
+}
+
+.label-float input:focus {
+
+    border-bottom: 2px solid #000000;
+
+}
+
+#labelNome{
+
+    font-size:18pt;
+}
+
+#labelEmail{
+
+    font-size:18pt;
+}
+
+#labelSenha{
+
+    font-size:18pt;
+}
+
+#labelConfirmSenha{
+
+    font-size:18pt;
+}
+
+.label-float label {
+
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5px;
+    transition: all 0.3s ease-out;
+
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label {
+
+    /*se conter algum conteudo valido no input ele faz o efeito de baixo*/
+    font-size: 13px;
+    margin-top: 0;
+    color: rgb(255, 78, 255);
+
+}
+
+.fa-eye {
+
+    /*olho que ve a senha*/
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 78, 255);
+    
+}
+
+.botao-cadastrar {
+
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+
+    height: 50%;
+    width: 30%;
+    border-radius: 15px;
+    border: 1%;
+    background-color: rgb(249, 194, 247);
+    border-color: rgb(252, 159, 252);
+    color: rgb(105, 105, 105);
+    padding: 7px;
+    /*desgrudar palavras da tela*/
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-out;
+
+}
+
+button:hover {
+
+    background-color: rgb(252, 159, 252);
+    color: white;
+
+}
+
+.label-fim {
+
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.label-fim-um {
+
+    color: black;
+
+}
+
+.label-fim-dois {
+
+    color: rgb(252, 159, 252);
+
+}
+
+#msgError {
+
+    text-align: center;
+    color: #f90e0e;
+
+}
+
+#msgSuccess {
+
+    text-align: center;
+    color: #00ff04;
+    display: none;
+
+}

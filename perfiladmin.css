@@ -1,0 +1,335 @@
+html {
+
+    height: 100%;
+    /*altura*/
+
+}
+
+body {
+
+    height: 100%;
+    /*altura*/
+    margin: 0px;
+    /*margem*/
+
+}
+#editEmail{
+width: 450px;
+height: 50px;
+}
+
+#editSenha{
+    width: 450px;
+    height: 50px;
+}
+
+#editNome{
+    width: 450px;
+    height: 50px;
+}
+
+#exEmail{
+    width: 450px;
+    height: 50px;
+}
+
+#exSenha{
+    width: 450px;
+    height: 50px;
+}
+
+#editProduto{
+    width: 450px;
+    height: 50px;
+}
+
+#editValorProduto{
+    width: 450px;
+    height: 50px;
+
+}
+
+#exProduto{
+
+    width: 450px;
+    height: 50px;    
+}
+
+#pesqProduto{
+
+    width: 450px;
+    height: 50px;    
+}
+
+.tamanho{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.editCadastro{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+
+    height: 80%;
+    /*altura*/
+    width: 100%;
+    /*largura*/
+    overflow: hidden;
+    /*eliminar barra da lateral para rodar*/
+    background-color: rgb(150, 57, 57);
+    display: flex;
+
+}
+
+.esquerda {
+
+    height: 100vh;
+    width: 55%;
+    background-color: #EEF5F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nome-usuario {
+
+    height: 35vh;
+    width: 100%;
+    background-color: #EEF5F6;
+    justify-content: first baseline;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#fotoperfil {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(9, 139, 253, 0);
+    justify-content: center;
+    align-items: center;
+
+}
+
+#foto {
+    border-radius: 50%;
+    border: solid;
+    border-color: black;
+
+    box-shadow: 3px 5px 5px rgb(177, 177, 177);
+
+}
+
+.dadosUsuario {
+
+    background-color: #D9D9D9;
+    color: #000000c7;
+    height: 20vh;
+    width: 80%;
+    border-radius: 25px;
+    border: transparent;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px rgb(177, 177, 177);
+    transition: all 0.5s ease-out;
+    text-align: center;
+    margin: 18px auto;
+    font-size: 30px;
+
+
+}
+
+.informacoes-usuario {
+
+    height: 25vh;
+    width: 70%;
+    background-color: #178e9e00;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.botao-bonito {
+
+    height: 30%;
+    /*altura*/
+    width: 100%;
+    /*largura*/
+    background-color: #05596400;
+    ;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 3%;
+
+}
+
+.botao-editar {
+
+    height: 30%;
+    /*altura*/
+    width: 55%;
+ 
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    
+text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 15px;
+    border: 1%;
+    background-color: rgb(249, 194, 247);
+    border-color: rgb(252, 159, 252);
+    color: rgb(105, 105, 105);
+    padding: 7px;
+    /*desgrudar palavras da tela*/
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-out;
+    margin-bottom: 15px;
+
+}
+
+button:hover {
+
+    background-color: rgb(252, 159, 252);
+    color: white;
+
+}
+
+
+.direita {
+
+
+    height: 100%;
+    width: 50%;
+    background-color: #EEF5F6;
+    justify-content: first baseline;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.informacoes {
+
+    height: 75%;
+    /*altura*/
+    width: 55%;
+    /*largura*/
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    border-radius: 3%;
+    justify-content: center;
+    box-shadow: 3px 5px 5px rgb(70, 70, 70);
+
+}
+
+
+/* header */
+body {
+    margin: 0;
+   
+  }
+  
+  .navbar {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EEF5F6;
+    padding: 35px;
+
+    
+  }
+  
+  .navbar-logo {
+    
+    margin-left: 10px; 
+    height: -1px;
+
+  }
+  
+  .navbar-logo img {
+    width: 110px;
+    height: 110px;
+    margin-right: 0%;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 325px;
+  }
+  
+  .navbar-menu a, label {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    
+    font-size: 25px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .navbar-icons img {
+    
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#linha-vertical {
+    height: 25px;
+    border-right: 1px solid black;
+}
+
+.infoLista{ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

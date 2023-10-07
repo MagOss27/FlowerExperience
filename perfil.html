@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="principal.html">
+    <link rel="stylesheet" href="componentesCssPrincipal/dropdwon.css">
+    <title>Flower Experience</title>
+
+</head>
+<body onload="listarPedidos()">
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="elementos/ICONES/LOGO S.A.png" alt="Logo">
+    </div>
+    <nav class="navbar-menu">
+      <a href="principal.html">Início</a>
+      <div id="linha-vertical"></div>
+      <a href="#buques">Buquês</a>
+      <div id="linha-vertical"></div>
+      <a href="#plantadas">Plantadas</a>
+      <div id="linha-vertical"></div>
+      <a href="#orquidias">Orquídeas</a>
+    </nav>
+    <div class="navbar-icons">
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/3.png" alt="Icon 2">
+      </a>
+      <div class="dropdown">
+        <a href="#">
+          <img src="elementos/ICONES/2.png" alt="Icon 1">
+        </a>
+        <div class="dropdown-content">
+          <a href="principal.html" id="link-login">Sair</a>
+        </div>
+      </div>
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/1.png" alt="Icon 2">
+      </a>
+
+    </div>
+  </div>
+
+    <div id="container">
+      
+
+      <div class="esquerda">
+        <div class="nome-usuario">
+            <div id="titulousuario">
+                <h1 id="nomeUsuario">OLÁ, SEJA BEM VINDO!</h1>
+            </div>
+            <div id="fotoperfil">
+                <input id="foto" type="image" src="elementos/ICONES/perfil.png">
+            </div>
+        </div>
+        <div class="informacoes-usuario">
+            <input class="dadosUsuario" id="usuarioEmail" placeholder="Email de Usuário"  type="text">
+            <input class="dadosUsuario" id="usuarioSenha" placeholder="Senha de Usuário"  type="text">
+            <span class="lnr lnr-eye"></span>
+        </div>
+        <div class="botao-bonito">
+            <div class="botao-editar">
+
+              
+                <button class="botaoEditar" id="editarButton">Editar</button>
+                <button onclick="listarPedidos()" class="botaoEditar" id="listarPedidos">Listar Pedidos</button>
+            </div>
+        </div>
+    </div>
+        <div class="direita">
+
+            <h1>Meus Pedidos</h1>
+
+            <div id="infolista" class="informacoes">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="editCadastro">
+<div class="tamanho">
+
+  <label id="edtlabelusuario" for="">Editar Usuário</label>
+  <input class="dadosUsuario" id="editEmail" placeholder="Email de Usuário" readonly type="text">
+  <input class="dadosUsuario" id="editNome" placeholder="Nome de Usuário"  type="text">
+  <input class="dadosUsuario" id="editSenha" placeholder="Senha de Usuário"  type="text">
+  <button onclick="EditarUsuario()" class="botaoEditar" id="editarUsuario"> Editar Usuário </button>
+
+  <label id="edtlabelusuario" for="">Excluir Usuário</label>
+  <input class="dadosUsuario" id="exEmail" placeholder="Email de Usuário"  type="text">
+  <input class="dadosUsuario" id="exSenha" placeholder="Senha de Usuário"  type="text">
+  <button onclick="ExcluirUsuario()" class="botaoEditar" id="excluirUsuario"> Excluir Usuário </button>
+</div>
+</div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfiladmin.css">
+    <link rel="stylesheet" href="principal.html">
+    <link rel="stylesheet" href="componentesCssPrincipal/dropdwon.css">
+    <title>Flower Experience</title>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo">
+          <img src="elementos/ICONES/LOGO S.A.png" alt="Logo">
+        </div>
+        <nav class="navbar-menu">
+          <label onclick="paginiaInicio()">Início</label>
+          <div id="linha-vertical"></div>
+          <a href="#buques">Buquês</a>
+          <div id="linha-vertical"></div>
+          <a href="#plantadas">Plantadas</a>
+          <div id="linha-vertical"></div>
+          <a href="#orquidias">Orquídeas</a>
+        </nav>
+        <div class="navbar-icons">
+          <a href="carrinho.html">
+            <img src="elementos/ICONES/3.png" alt="Icon 2">
+          </a>
+          <div class="dropdown">
+            <a href="#">
+              <img src="elementos/ICONES/2.png" alt="Icon 1">
+            </a>
+            <div class="dropdown-content">
+              <a href="cadastro.html">Cadastre-se</a>
+              <a href="login.html" id="link-login">Logar</a>
+            </div>
+          </div>
+          <a href="carrinho.html">
+            <img src="elementos/ICONES/1.png" alt="Icon 2">
+          </a>
+    
+        </div>
+      </div>
+
+    <div id="container">
+      
+
+      <div class="esquerda">
+        <div class="nome-usuario">
+            <div id="titulousuario">
+                <h1 id="nomeUsuario">PAINEL ADMINISTRADOR</h1>
+            </div>
+            <div id="fotoperfil">
+                <input id="foto" type="image" src="elementos/ICONES/perfil.png">
+            </div>
+        </div>
+        <div class="informacoes-usuario">
+            <input class="dadosUsuario" id="addProduto" placeholder="Digite o nome do produto..."  type="text">
+            <input class="dadosUsuario" id="addValorProduto" placeholder="Digite o valor do produto..."  type="number">
+            <span class="lnr lnr-eye"></span>
+        </div>
+        <div class="botao-bonito">
+            <div class="botao-editar">
+                <button onclick="AdicionarProduto()" class="botaoEditar" id="excluir">Adicionar Produtos</button>
+                <button onclick="listarProduto()" class="botaoEditar" id="listarPedidos">Listar Produtos</button>
+            </div>
+        </div>
+    </div>
+        <div class="direita">
+
+            <h1>Produtos Cadastrados</h1>
+
+            <div id="infolista" class="informacoes">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="editCadastro">
+<div class="tamanho">
+
+   <label for="pesqProduto">Pequisar Produto</label>
+   <input class="dadosUsuario" id="pesqProduto" placeholder="Nome do Produto..."  type="text">
+   <button onclick="PesquisarProduto()" class="botaoEditar" id="editarUsuario"> Pesquisar Produto </button>
+
+  <label for="editProduto">Editar Produto</label>
+  <input class="dadosUsuario" id="editProduto" placeholder="Nome do Produto..."  type="text">
+  <input class="dadosUsuario" id="editValorProduto" placeholder="Valor do produto..."  type="text">
+  <button onclick="EditarProduto()" class="botaoEditar" id="editarUsuario"> Editar Produto </button>
+
+  <label for="exProduto">Excluir Produto</label>
+  <input class="dadosUsuario" id="exProduto" placeholder="Nome do produto à excluir..."  type="text">
+  <button onclick="ExcluirProduto()" class="botaoEditar" id="excluirUsuario"> Excluir Produto </button>
+</div>
+</div>
+
+    <!-- <script src="perfil.js"></script> -->
+    <script src="login.js"></script>
+    <script src="principal.js"></script>
+</body>
+</html>

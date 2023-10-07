@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Flower Experience</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link do olho que vê a senha-->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="esquerda"></div>
+
+        <div class="card"> <!--Quadrado que contém todas informações-->
+
+            <div class="label-titulo">
+
+                <h1>Entrar</h1>
+
+            </div>
+
+            <div id="msgError"></div> <!--id da mensagem de erro-->
+
+            <div class="labels">
+
+                <div class="label-float">
+                    <input type="text" id="nome" placeholder="" required>
+                    <!--  O required obriga um valor dentro do input-->
+                    <label id='nomeLabel' for="nome">E-mail</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="" required>
+                    <!--  O required obriga um valor dentro do input  -->
+                    <label id='senhaLabel' for="senha">Senha</label>
+                    <i class="fa fa-eye" aria-hidden="true"></i> <!--Olho que ve a senha ao lado-->
+                </div>
+
+            </div>
+
+            <div class="botao-cadastrar"> <!--class para centralizar e modificar o botao Entrar-->
+                <button onclick="entrar()">Entrar</button>
+            </div>
+
+            <div class="label-fim">
+
+                <label id="naopossuiconta" class="label-fim-um">Não possui conta? <a class="label-fim-dois"
+                        href="cadastro.html">Cadastre-se</a></label>
+                <!-- Mensagem para saber se o usuário ainda não tem uma conta-->
+            </div>
+
+        </div>
+
+        <div class="direita"></div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

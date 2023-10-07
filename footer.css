@@ -1,0 +1,32 @@
+#icone {
+    margin-right: 10px;
+    width: 5px; /* Reduzindo o tamanho dos ícones */
+}
+
+.icones {
+    font-size: 5px; /* Aumentando o tamanho dos ícones */
+}
+
+footer {
+    background-color: #FC9FFC;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+#pUm{
+    color: rgba(255, 255, 255, 0.5); font-size: 16px; margin-bottom: 10px;
+}
+.pDois{
+    color: white; font-size: 16px;
+    
+}
+.containerFooter{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+    
+
+}
+

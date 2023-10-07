@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+
+    <title>Flower Experience</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link do olho que vê a senha-->
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="esquerda"></div>
+
+        <div class="card"> <!--Quadrado que contem todas informações-->
+
+            <div class="label-titulo">
+
+                <h1>Cadastre-se</h1>
+
+            </div>
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+            <div class="labels">
+                <div class="label-float">
+                    <input type="text" id="nomecadastrar" placeholder="" required>
+                    <!--  O required obriga um valor dentro do input-->
+                    <label id='labelNome' for="nome">Nome</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="text" id="emailcadastrar" placeholder="" required>
+                    <!--  O required obriga um valor dentro do input-->
+                    <label id='labelEmail' for="email">E-mail</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="password" id="senhacadastrar" placeholder=" " required>
+                    <!--  O required obriga um valor dentro do input-->
+                    <label id='labelSenha' for="senha">Senha</label>
+                    <i id='verSenha' class="fa fa-eye" aria-hidden="true"></i> <!--Olho que ve a senha ao lado-->
+                </div>
+
+                <div class="label-float">
+                    <input type="password" id="confirmSenha" placeholder=" " required>
+                    <!--  O required obriga um valor dentro do input-->
+                    <label id='labelConfirmSenha' for="confirmSenha">Confirmar a sua Senha</label>
+                    <i id='verConfirmSenha' class="fa fa-eye" aria-hidden="true"></i>
+                    <!--Olho que ve a senha de confirmação ao lado-->
+                </div>
+
+            </div>
+
+            <div class="botao-cadastrar"> <!--personalização do botao cadastrar-->
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+
+            <div class="label-fim">
+
+                <label class="label-fim-um">Possui conta? <a class="label-fim-dois" href="login.html">Entrar</a></label>
+                <!-- Mensagem para saber se o usuário tem uma conta já cadastrada e que o leva a outro site para se conectar a conta-->
+            </div>
+
+        </div>
+
+        <div class="direita"></div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

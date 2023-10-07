@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="produto-dois.css">
+  <link rel="stylesheet" href="componentesCssPrincipal/dropdwon.css">
+  <title>Flower Experience</title>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="elementos/ICONES/LOGO S.A.png" alt="Logo">
+    </div>
+    <nav class="navbar-menu">
+      <label onclick="paginiaInicio()">Início</label>
+      <div id="linha-vertical"></div>
+      <a href="#buques">Buquês</a>
+      <div id="linha-vertical"></div>
+      <a href="#plantadas">Plantadas</a>
+      <div id="linha-vertical"></div>
+      <a href="#orquidias">Orquídeas</a>
+    </nav>
+    <div class="navbar-icons">
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/3.png" alt="Icon 2">
+      </a>
+      <div class="dropdown">
+        <a href="#">
+          <img src="elementos/ICONES/2.png" alt="Icon 1">
+        </a>
+        <div class="dropdown-content">
+          <a href="perfil.html">Ver Pefil</a>
+          <a href="login.html" id="link-login">Sair</a>
+        </div>
+      </div>
+      <a href="carrinho.html">
+        <img src="elementos/ICONES/1.png" alt="Icon 2">
+      </a>
+
+    </div>
+  </div>
+
+  <div id="container">
+
+
+
+    <div class="cima">
+
+    </div>
+
+
+    <div class="inteira">
+
+
+      <div class="lateral">
+
+        <div class="margemlateral">
+
+        </div>
+
+        <div class="imagem-pequena-um">
+
+        </div>
+
+        <div class="imagem-pequena-dois">
+
+        </div>
+
+      </div>
+
+
+      <div class="bloco_imagem">
+
+        <div class="imagem">
+
+        </div>
+
+      </div>
+
+
+      <div class="bloco-informacoes">
+
+        <div class="informacoes">
+
+          <div class="informacoesum">
+
+            <h1 class="informacoestitulo">BUQUÊ DE ROSAS RÚSTICO</h1>
+
+          </div>
+
+          <div class="informacoesdois">
+
+            <label class="informacoeslabel">💐 ACOMPANHA: Lindo buquê de 12 Rosas vermelhas. Presente perfeito para
+              presentear aquela pessoa querida, podendo se enquadrar em qualquer ocasião, seja ele amizade, amor,
+              família ou até mesmo para um colega de trabalho.
+              <br><br>🌸 DURABILIDADE: As flores
+              frescas duram em torno de uma semana.
+            </label>
+
+          </div>
+
+          <div class="infoentrega">
+
+            <div class="infoentregaum">
+
+              <label class="entregatitulo">Sobre a entrega: </label>
+
+            </div>
+
+            <div class="infoentregadois">
+
+              <label class="entregadescricao">Nossas entregas são feitas em um prazo médio de 3 horas ou dentro do turno
+                agendado na hora da compra (Tarde ou Manhã).</label>
+
+            </div>
+
+          </div>
+
+          <div class="botoes">
+
+            <button id="botao_um" onclick="adicionarAoCarrinho()">ADICIONAR AO CARRINHO</button>
+            <button id="botao_dois" onclick="comprarAgora()">COMPRAR AGORA</button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <script>
+
+
+      // Função de JS para Adicionar ao Carrinho os Produtos
+
+      function adicionarAoCarrinho() {
+        var nomeProduto = "Buquê de Rosas Rústica";
+        var precoProduto = 49.99;
+        var produto = {
+          nome: nomeProduto,
+          preco: precoProduto
+        };
+
+        var carrinho = localStorage.getItem("carrinho");
+        if (!carrinho) {
+          carrinho = [];
+        } else {
+          carrinho = JSON.parse(carrinho);
+        }
+
+        carrinho.push(produto);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+        Swal.fire(
+                    'Adicionado produto!',
+                    "Produto adicionado ao carrinho: " + nomeProduto,
+                    'success'
+                )
+      }
+
+      function comprarAgora() {
+        var produto = "Buquê de Rosas Rústica";
+        var preco = 49.99;
+        alert("Produto comprado: " + produto + "\nValor: R$" + preco.toFixed(2));
+      }
+
+
+      //  Função em JS para Aparecer um Alert em Comprar Agora!
+
+
+      function comprarAgora() {
+        Swal.fire({
+          title: 'Buquê de Rosas Rústica',
+          text: "Tem Certeza que Deseja Efetuar esta Compra?",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Sim, Comprar Agora!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire(
+              'Compra Efetuada com Sucesso!',
+              'Volte Sempre ;).',
+              'success'
+            )
+          }
+        })
+      }
+
+    </script>
+
+  </div>
+
+  <script src="carrinhoFuncional.js"></script>
+  <script src="principal.js"></script>
+
+</body>
+
+</html>
+
+</div>

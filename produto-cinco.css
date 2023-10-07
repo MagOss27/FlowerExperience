@@ -1,0 +1,352 @@
+html {
+
+    height: 100%; /*altura*/
+
+}
+
+body {
+
+    height: 100%; /*altura*/
+    margin: 0px; /*margem*/
+
+}
+
+#container {
+
+    height: 100%; /*altura*/
+    width: 100%; /*largura*/
+    overflow: hidden; /*eliminar barra da lateral para rodar*/
+    background-color: black; 
+
+
+}
+
+.cima {
+
+    height: 0%; /*altura*/
+    width: 100%; /*largura*/
+    background-color: #EEF5F6;
+
+}
+
+.inteira {
+
+    height: 100%; /*altura*/
+    width: 100%; /*largura*/
+    background-color: #EEF5F6;
+    display: flex; /*mexer nos blocos dentro da div*/
+}
+
+.lateral {
+
+    height: 80%; /*altura*/
+    width: 11%; /*largura*/
+    background-color: #EEF5F6;
+    display: flex; /*mexer nos blocos dentro da div*/
+    justify-content: flex-start; 
+    flex-direction: column; /*direção de colunas dentro da div*/
+    align-items: center; /*alinhar itens dentro da div*/
+    margin-top: 5%;
+}
+
+.imagem-pequena-um {
+
+    height: 15%; /*altura*/
+    width: 60%; /*largura*/
+    background-image:url(elementos/PRODUTOS/9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1px;
+    margin-left: 25%;
+    
+}
+
+.imagem-pequena-dois {
+ 
+    height: 15%; /*altura*/
+    width: 60%; /*largura*/
+    background-image: url(elementos/PRODUTOS/10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1px;
+    margin-left: 15%;
+
+
+}
+
+.bloco_imagem {
+
+    height: 85%; /*altura*/
+    width: 50%; /*largura*/
+    background-color: #eef5f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.imagem {
+    
+    height: 85%; /*altura*/
+    width: 75%; /*largura */
+    background-image: url(elementos/PRODUTOS/9.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 3%;
+    box-shadow: 3px 5px 5px rgb(143, 143, 143);
+
+}
+
+.bloco-informacoes {
+
+    height: 85%; /*altura*/
+    width: 35%; /*largura*/
+    background-color: #EEF5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.informacoes {
+
+    height: 85%; /*altura*/
+    width: 100%; /*largura */
+    background-color: #D9D9D9;
+    margin: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 3%;
+    box-shadow: 3px 5px 5px rgb(143, 143, 143);
+
+}
+
+.infoentrega {
+
+    height: 45%; /*altura*/
+    width: 90%; /*largura*/
+    background-color: #AAAAAA;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+    box-shadow: 3px 5px 5px rgb(70, 70, 70);
+
+}
+
+.botoes {
+
+    height: 20%; /*altura*/
+    width: 80%; /*largura*/
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#botao_um {
+
+    background-color: #F9C2F7;
+    color: #696969;
+    height: 75%;
+    width: 45%;
+    border-radius: 25px;
+    border: solid #FC9FFC;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px rgb(177, 177, 177);
+    transition: all 0.5s ease-out;
+    
+
+}
+
+#botao_dois {
+
+    background-color: #F9C2F7;
+    color: #696969;
+    height: 75%;
+    width: 45%;
+    border-radius: 25px;
+    border: solid #FC9FFC;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px rgb(177, 177, 177);
+    margin-left: 3%;
+
+
+}
+
+
+.escrita-informacao{
+
+    background-color: #EEF5F6;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    display: flex;
+
+}
+
+.entregatitulo {
+
+    padding: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+
+     
+}
+
+.entregadescricao {
+
+    display: flex;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+
+     
+}
+
+.infoentregaum {
+
+    height: 30%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: transparent;
+    margin: 2%;
+}
+
+.infoentregadois {
+
+    height: 70%;
+    width: 95%;
+    background-color: transparent;
+
+}
+
+.labelinformacoes{
+
+    display: flex;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    margin: 10px;
+
+    
+
+}
+
+.informacoesum{
+    
+    padding: 1%;
+    height: 18%;
+    width: 90%;
+    background-color: transparent;
+    margin-left: 5%;
+
+
+}
+
+.informacoesdois{
+
+    padding: 2%;
+    height: 82%;
+    width: 90%;
+    background-color: rgba(128, 48, 48, 0);
+
+
+}
+
+.informacoestitulo{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+
+
+
+}
+
+.informacoeslabel{
+
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    text-align: center;
+
+
+}
+/* header */
+body {
+    margin: 0;
+   
+  }
+  
+  .navbar {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EEF5F6;
+    padding: 35px;
+
+    
+  }
+  
+  .navbar-logo {
+    
+    margin-left: 10px; 
+    height: -1px;
+
+  }
+  
+  .navbar-logo img {
+    width: 110px;
+    height: 110px;
+    margin-right: 0%;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 325px;
+  }
+  
+  .navbar-menu a, label {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    
+    font-size: 25px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .navbar-icons img {
+    
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#linha-vertical {
+    height: 25px;
+    border-right: 1px solid black;
+}
