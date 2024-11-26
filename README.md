@@ -25,8 +25,8 @@ Através de uma abordagem colaborativa, tivemos a oportunidade de aprimorar noss
 
 ### 1. Clone o repositório:
 
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
-    cd nome-do-repositorio
+    git clone https://github.com/MagOss27/FlowerExperience.git
+    cd FlowerExperience
     
 ### 2. Abra o arquivo index.html no navegador:
 Não há necessidade de servidor para rodar o projeto, basta abrir o arquivo index.html no seu navegador para ver o projeto em funcionamento.
