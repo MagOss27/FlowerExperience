@@ -26,5 +26,5 @@ Através de uma abordagem colaborativa, tivemos a oportunidade de aprimorar noss
 ### 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/MagOss27/FlowerExperience.git
+cd FlowerExperience
